@@ -233,7 +233,7 @@
 		}
 		.contact {
 			width: 99%;
-			height: 160px;
+			height: 130px;
 			max-width: 346px;
 			direction: ltr;
 			border: 2px solid #d8d8d8;
@@ -336,12 +336,9 @@
 			width: 100px;
 			height: 35px;
 			float: left;
-			margin-top: 8px;
+			margin-top: 6px;
 		}
 		
-		.contact-img img:first-child {
-			margin-top: 15px;
-		}
 		/*Animations*/
 		.animated {
 			-webkit-animation-duration: 1s;
@@ -469,6 +466,61 @@
 			-webkit-animation-name: rubberBand;
 			animation-name: rubberBand;
 		}
+		
+/*****************************************************************/
+/*****************************************************************/	/*****************************************************************/	/**********************Category Page*******************************/
+/*****************************************************************/
+/*****************************************************************/
+		
+		.index .category-container {
+			width: 100%;
+			height: 100vh;
+			direction: ltr;
+			margin: 0 auto;
+		}
+		
+		.index .category-container ul.category {
+			width: 360px;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			margin: 0 auto;
+			margin-top: 70px;
+			margin-bottom: 170px;
+		}
+		
+		.index .category-container ul.category li {
+			list-style-type: none;
+			width: 150px;
+			height: 170px;
+			margin-left: 30px;
+		}
+		
+		.index .category-container ul.category li .category-icon {
+			width: 150px;
+			height: 125px;
+			border:2.5px solid #9a9a9a;
+			border-radius: 4px;
+		}
+		
+		.index .category-container ul.category li img {
+			width: 125px;
+			height: 100px;
+			margin-left: calc(50% - 65px);
+   			margin-top: calc(50% - 65px);
+		} 
+		
+		.index .category-container ul.category li h1 {
+			font-family: calibri;
+			font-size: 15px;
+			font-weight: 600;
+			color:#575757;
+			letter-spacing: 2px;
+			text-align: center;
+			text-transform: uppercase;
+			margin-top: 10px;
+		}
+		
 	}
 
 	
@@ -805,7 +857,7 @@
 		.contact-img img:first-child {
 			margin-top: 15px;
 		}
-		/*Animations*/
+		
 		.animated {
 			-webkit-animation-duration: 1s;
 			animation-duration: 1s;
@@ -933,6 +985,95 @@
 			animation-name: rubberBand;
 		}
 		
+		
+/*****************************************************************/
+/*****************************************************************/	/*****************************************************************/	/**********************Category Page*******************************/
+/*****************************************************************/
+/*****************************************************************/
+		
+		.index .category-container {
+			width: 100%;
+			height: 100vh;
+			direction: ltr;
+			margin: 0 auto;
+		}
+		
+		.index .category-container ul.category {
+			width: 360px;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			margin: 0 auto;
+			margin-top: 70px;
+			margin-bottom: 170px;
+		}
+		
+		.index .category-container ul.category li {
+			list-style-type: none;
+			width: 150px;
+			height: 170px;
+			margin-left: 30px;
+		}
+		
+		.index .category-container ul.category li .category-icon {
+			width: 150px;
+			height: 125px;
+			border:2.5px solid #9a9a9a;
+			border-radius: 4px;
+		}
+		
+		.index .category-container ul.category li img {
+			width: 125px;
+			height: 100px;
+			margin-left: calc(50% - 65px);
+   			margin-top: calc(50% - 65px);
+		} 
+		
+		.index .category-container ul.category li h1 {
+			font-family: calibri;
+			font-size: 15px;
+			font-weight: 600;
+			color:#575757;
+			letter-spacing: 2px;
+			text-align: center;
+			text-transform: uppercase;
+			margin-top: 10px;
+		}		
+		
+	}
+
+	@media only screen and (min-width: 740px) {
+		
+		.index .category-container ul.category {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			margin: 0 auto;
+			margin-top: 170px;
+			margin-bottom: 170px;
+		}
+		
+		.index .category-container ul.category li {
+			list-style-type: none;
+			width: 140px;
+			height: 170px;
+			margin-left: 30px;
+		}
+		
+		.index .category-container ul.category li .category-icon {
+			width: 150px;
+			height: 125px;
+			border:2.5px solid #9a9a9a;
+			border-radius: 4px;
+		}
+		
+		.index .category-container ul.category li img {
+			width: 125px;
+			height: 100px;
+			margin-left: calc(50% - 65px);
+   			margin-top: calc(50% - 65px);
+		} 	
 	}
 
 /*************************************************************************************/
@@ -969,6 +1110,8 @@
 			box-shadow: 40px -15px 35px -8px rgba(162, 162, 162, 0.7), -40px 4px 35px 8px rgba(162, 162, 162, 0.7);
 			position: relative;
 			overflow: hidden;
+			border: 3px solid #a9a9a7;
+			border-radius: 10px;
 		}
 		
 		.container .index .index-image img {
@@ -1378,6 +1521,64 @@
 			-webkit-animation-name: rubberBand;
 			animation-name: rubberBand;
 		}
+		
+/*****************************************************************/
+/*****************************************************************/	/*****************************************************************/	/**********************Category Page*******************************/
+/*****************************************************************/
+/*****************************************************************/
+		
+		.index .category-container {
+			width: 100%;
+			height: auto;
+			direction: ltr;
+			margin: 0 auto;
+		}
+		
+		.index .category-container ul.category {
+			width: 720px;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			margin: 0 auto;
+			margin-top: 270px;
+		}
+		
+		.index .category-container ul.category li {
+			list-style-type: none;
+			width: 150px;
+			height: 170px;
+			margin-left: 40px;
+		}
+		
+		.index .category-container ul.category li:first-child {
+			margin-left: 0;
+		}
+		
+		.index .category-container ul.category li .category-icon {
+			width: 150px;
+			height: 125px;
+			border:2.5px solid #9a9a9a;
+			border-radius: 4px;
+		}
+		
+		.index .category-container ul.category li img {
+			width: 125px;
+			height: 100px;
+			margin-left: calc(50% - 65px);
+   			margin-top: calc(50% - 65px);
+		} 
+		
+		.index .category-container ul.category li h1 {
+			font-family: calibri;
+			font-size: 15px;
+			font-weight: 600;
+			color:#575757;
+			letter-spacing: 2px;
+			text-align: center;
+			text-transform: uppercase;
+			margin-top: 10px;
+		}
+
 	}
 
 @media screen and (min-width:1200px) {
