@@ -12,7 +12,11 @@
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/bootstrap-rtl.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-	<link href="animate.css" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/tilteffect.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<!--	<link rel="stylesheet" type="text/css" href="css/component.css" />-->
 <!--	<link href="css/animate.css" rel="stylesheet">-->
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,39 +29,33 @@
 <body>
 	<div class="container">
 		<div class="row index">
-			<div class="category-container">
-				<ul class="category">
-					<li class="category-item">
-						<div class="category-icon">
-							<img src="images/gallery-category-photography.png" alt=""  hover="samfade()">
-						</div>
-						<h1 class="category-title">PHOTOGRAPHY</h1>
-					</li>
-					<li class="category-item">
-						<div class="category-icon">
-							<img src="images/gallery-category-digital-design.png" class="shadow-radial" alt="">
-						</div>
-						<h1 class="category-title">Digital Design</h1>
-					</li>
-					<li class="category-item">
-						<div class="category-icon">
-							<img src="images/gallery-category-print-design.png" alt="">
-						</div>
-						<h1 class="category-title">Print design</h1>
-					</li>
-					<li class="category-item">
-						<div class="category-icon">
-							<img src="images/gallery-category-logo-design.png" alt="">
-						</div>
-						<h1 class="category-title">logo</h1>
-					</li>
-				</ul>
-				
-				
-			</div>
-			
-	
 
+			
+			
+			
+<!--
+			<div class="index-image">
+				<img src="images/index-img.png" alt="Contact Button">
+			</div>
+-->
+			
+<!--<div class="segmenter btn-trigger" style="background-image: url(images/index-img.png)"></div>-->
+			
+
+
+	<img class="tilt-effect" src="images/index-img.png" alt="The image"/>
+
+			
+			
+			
+			<div class="index-content">
+				<div id="logo" class="play visible-xs visible-sm"></div>
+				<h1 class="animation">I'M ALIREZA BAGHERIFARD</h1>
+				  <h2>PHOTOGRAPHER.VIDEOGRAPHER.DESIGNER.EDITOR</h2>
+			  
+				  <button class="work-button"><span>MY WORK</span></button>		
+				<div id="logo" class="play hidden-sm hidden-xs"></div>
+			</div>
 			<div class="contact-button" id="contact-button" onclick="samfade()">
 				<img src="images/contact-me.png" alt="Contact Button">
 				<p>CONTACT ME</p>
@@ -101,16 +99,18 @@
 		
 	</div>
 
-	
+	<button class="btn btn-trigger">Show Effect</button>	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
 
-
+<script src="js/tiltfx.js"></script>
 
 <script type="text/javascript">
+
 	
+<script>
 function samfade() {
 	$('.contact').removeClass('animated fadeOutDown');
 	$('.contact-button').removeClass('animated manydown hideanimate');	
@@ -124,6 +124,7 @@ function contactclose() {
 	$('.contact-button').removeClass('hideanimate');
 }
 	
+
 </script>
 	
   

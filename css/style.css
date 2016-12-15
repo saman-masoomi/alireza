@@ -30,6 +30,7 @@
 			position: relative;
 			min-width: 346px;
 		}
+		
 		.container .index .index-image img {
 			width: 100%;
 			min-height: 250px;
@@ -547,6 +548,7 @@
 			position: relative;
 			min-width: 346px;
 		}
+
 		.container .index .index-image img {
 			width: 100%;
 			min-height: 250px;
@@ -639,6 +641,7 @@
 			top: 0px;
 			word-wrap: break-word;
 			margin-bottom: 30px;
+			position: relative;
 		}
 
 		.index .index-content #logo {
@@ -1114,10 +1117,43 @@
 			border-radius: 10px;
 		}
 		
+		.container .index .index-image {
+			width: 70%;
+		}
+		
 		.container .index .index-image img {
 			width: 100%;
 			height: auto;
 			padding-bottom: 22px;
+		}
+		
+		.tilt {
+			overflow: hidden;
+			position: relative;
+			width: 100%;
+			height: 100%;
+			margin: 0 auto;
+			margin-top: -70px;
+		}
+
+		.tilt__back,
+		.tilt__front {
+			width: 100%;
+			height: 100%;
+			background-position: 0% 10%;
+			background-repeat: no-repeat;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+		}
+
+		.tilt__back {
+			position: relative;
+		}
+
+		.tilt__front {
+			position: absolute;
+			top: 0;
+			left: 0;
 		}
 
 		.container .index .index-content {
@@ -1590,5 +1626,75 @@
 			margin-left: 20px;
 			margin-top: 120px;
 		}
+	
+		.tilt {
+			overflow: hidden;
+			position: relative;
+			width: 100%;
+			height: 100%;
+			margin: 0 auto;
+			margin-top: -70px;
+		}
+
+		.tilt__back,
+		.tilt__front {
+			width: 100%;
+			height: 100%;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+		}
+
+		.tilt__back {
+			position: relative;
+		}
+
+		.tilt__front {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
 }
 
+.segmenter {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.segmenter__background,
+.segmenter__pieces,
+.segmenter__piece-wrap,
+.segmenter__piece-parallax,
+.segmenter__piece {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	transform-style: preserve-3d;
+}
+
+.segmenter__piece-parallax {
+	transition: transform 0.2s ease-out;
+}
+
+.segmenter__pieces {
+	perspective: 400px;
+}
+
+.segmenter__background,
+.segmenter__piece,
+.segmenter {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.segmenter__shadow {
+	position: absolute;
+	opacity: 0;
+	box-shadow: 2px 3px 10px rgba(3,3,3,0.3);
+}
