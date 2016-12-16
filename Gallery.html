@@ -12,8 +12,7 @@
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/bootstrap-rtl.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-<!--	<link rel="stylesheet" type="text/css" href="css/component.css" />-->
-<!--	<link href="css/animate.css" rel="stylesheet">-->
+
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -24,31 +23,45 @@
 
 <body>
 	<div class="container">
-		<div class="row index">
-
-			
-			
-			
-<!--
-			<div class="index-image">
-				<img src="images/index-img.png" alt="Contact Button">
+		<div class="row single-index">
+			<div class="single-content">
+				<div class="gallery">
+				</div>
 			</div>
--->
-			
-<div class="segmenter btn-trigger" style="background-image: url(images/index-img.png)"></div>
-			
 		
-			
-			
-			
-			<div class="index-content">
-				<div id="logo" class="play visible-xs visible-sm"></div>
-				<h1 class="animation">I'M ALIREZA BAGHERIFARD</h1>
-				  <h2>PHOTOGRAPHER.VIDEOGRAPHER.DESIGNER.EDITOR</h2>
-			  
-				  <button class="work-button"><span>MY WORK</span></button>		
-				<div id="logo" class="play hidden-sm hidden-xs"></div>
+			<div class="single-category-container">
+				<ul class="category">
+					<li class="single-category-item">
+						<div class="single-category-icon">
+							<img src="images/gallery-category-photography.png" alt=""  hover="samfade()">
+						</div>
+						<h1 class="single-category-title">PHOTOGRAPHY</h1>
+					</li>
+					<li class="single-category-item">
+						<div class="single-category-icon">
+							<img src="images/gallery-category-digital-design.png" class="shadow-radial" alt="">
+						</div>
+						<h1 class="single-category-title">Digital Design</h1>
+					</li>
+					<li class="single-category-item">
+						<div class="single-category-icon">
+							<img src="images/gallery-category-print-design.png" alt="">
+						</div>
+						<h1 class="single-category-title">Print design</h1>
+					</li>
+					<li class="single-category-item">
+						<div class="single-category-icon">
+							<img src="images/gallery-category-logo-design.png" alt="">
+						</div>
+						<h1 class="single-category-title">logo</h1>
+					</li>
+				</ul>
+				
+				
 			</div>
+			
+	
+
 			<div class="contact-button" id="contact-button" onclick="samfade()">
 				<img src="images/contact-me.png" alt="Contact Button">
 				<p>CONTACT ME</p>
@@ -92,20 +105,16 @@
 		
 	</div>
 
-	<button class="btn btn-trigger">Show Effect</button>	
+	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/anime.min.js"></script>
-	<script src="js/imagesloaded.pkgd.min.js"></script>
-	<script src="js/main.js"></script>
+
 
 
 <script type="text/javascript">
 
-	
-	
 function samfade() {
 	$('.contact').removeClass('animated fadeOutDown');
 	$('.contact-button').removeClass('animated manydown hideanimate');	
@@ -119,39 +128,6 @@ function contactclose() {
 	$('.contact-button').removeClass('hideanimate');
 }
 	
-(function() {
-			var headline = document.querySelector('.trigger-headline'),
-				trigger = document.querySelector('.btn-trigger'),
-				segmenter = new Segmenter(document.querySelector('.segmenter'), {
-					pieces: 3,
-					animation: {
-						duration: 2000,
-						easing: 'easeOutQuad',
-						delay: 20,
-						translateZ: {min: 10, max: 10}
-					},
-					parallax: true,
-					parallaxMovement: {min: 8, max: 8},
-					positions: [
-						{top: 50, left: 20, width: 20, height: 30},
-						{top: 22, left: 65, width: 30, height: 20},
-						{top: 10, left: 45, width: 14, height: 25},
-						{top: 23, left: 50, width: 20, height: 10},
-						{top: 30, left: 65, width: 10, height: 30},
-						{top: 48, left: 20, width: 10, height: 13},
-						{top: 50, left: 67, width: 10, height: 20}
-					],
-					onReady: function() {
-						trigger.classList.remove('btn--hidden');
-						trigger.addEventListener('click', function() {
-							segmenter.animate();
-							headline.classList.remove('trigger-headline--hidden');
-							this.classList.add('btn--hidden');
-						});
-					}
-				});
-		})();	
-   
 </script>
 	
   

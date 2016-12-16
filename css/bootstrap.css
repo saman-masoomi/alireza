@@ -6559,7 +6559,8 @@ button.close {
   position: fixed;
 }
 @-ms-viewport {
-  width: device-width;
+    /*noinspection CssInvalidPropertyValue*/
+    width: device-width;
 }
 .visible-xs,
 .visible-sm,
