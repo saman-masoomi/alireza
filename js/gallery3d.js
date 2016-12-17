@@ -147,7 +147,7 @@ var animation = {
 
 document.on('mousemove', function (e) {
     rotation.final = MAXDEGREE * e.clientX / window.innerWidth;
-    perspective.final = (e.clientY - window.innerHeight / 2) * 2 + BASEPERSPECTIVE;
+    perspective.final = (e.clientY - window.innerHeight / 2) * 0 + BASEPERSPECTIVE;
 
     animation.play();
 });
@@ -169,7 +169,7 @@ document.on('mouseleave', function () {
 });
 
 window.on('mousewheel, DOMMouseScroll', function (e) {
-    var wheelDistance = e.detail ? -e.detail / 3 : e.wheelDelta / 120;
+//    var wheelDistance = e.detail ? -e.detail / 6 : e.wheelDelta / 120;
 
     zoom.final += wheelDistance / 10;
     zoom.final = Math.min(Math.max(zoom.final, .25), 2);

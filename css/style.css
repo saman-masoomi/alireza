@@ -1955,8 +1955,8 @@
 		.single-content .gallery .stage {
 		  width: 480px;
 		  margin: 100px auto 0 auto;
-		  -webkit-perspective: 800px;
-				  perspective: 800px;
+		  -webkit-perspective: 1800px;
+				  perspective: 1800px;
 		  -webkit-perspective-origin: 50% 180px;
 				  perspective-origin: 50% 180px;
 		}
@@ -1989,47 +1989,52 @@
 		  position: absolute;
 		  -webkit-backface-visibility: hidden;
 				  backface-visibility: hidden;
-		  background: url(../images/Catalog2.jpg) no-repeat;
+		  background: url(../images/1_num.jpg) no-repeat;
 		  background-size: 400%;
 		  opacity: 1;
 		}
 		.single-content .gallery .flyer__page--6 {
-		  background-position: left bottom;
+		  background-position: left top;
 		  -webkit-transform: rotateY(-45deg) translateZ(99px);
 				  transform: rotateY(-45deg) translateZ(99px);
+/*
+			background:  url(../images/11111-catalog.jpg);
+			-webkit-background-size: 100%;
+				background-size: 100%;
+*/
 		}
 		.single-content .gallery .flyer__page--5 {
-		  background-position: right top;
+		  background-position: right bottom;
 		  -webkit-transform: rotateY(135deg) translateZ(-99px);
 				  transform: rotateY(135deg) translateZ(-99px);
 		}
 		.single-content .gallery .flyer__page--7 {
-		  background-position: -198px bottom;
+		  background-position: -198px top;
 		  -webkit-transform: rotateY(45deg) translateZ(99px);
 				  transform: rotateY(45deg) translateZ(99px);
 		}
 		.single-content .gallery .flyer__page--4 {
-		  background-position: -396px top;
+		  background-position: -396px bottom;
 		  -webkit-transform: rotateY(-135deg) translateZ(-99px);
 				  transform: rotateY(-135deg) translateZ(-99px);
 		}
 		.single-content .gallery .flyer__page--8 {
-		  background-position: -396px bottom;
+		  background-position: -396px top;
 		  -webkit-transform: rotateY(-45deg) translateZ(-99px) translateX(100%);
 				  transform: rotateY(-45deg) translateZ(-99px) translateX(100%);
 		}
 		.single-content .gallery .flyer__page--3 {
-		  background-position: -198px top;
+		  background-position: -198px bottom;
 		  -webkit-transform: rotateY(135deg) translateZ(99px) translateX(-100%);
 				  transform: rotateY(135deg) translateZ(99px) translateX(-100%);
 		}
 		.single-content .gallery .flyer__page--1 {
-		  background-position: right bottom;
+		  background-position: right top;
 		  -webkit-transform: rotateY(45deg) translateZ(297px) translateX(100%);
 				  transform: rotateY(45deg) translateZ(297px) translateX(100%);
 		}
 		.single-content .gallery .flyer__page--2 {
-		  background-position: left top;
+		  background-position: left bottom;
 		  -webkit-transform: rotateY(-135deg) translateZ(-297px) translateX(-100%);
 				  transform: rotateY(-135deg) translateZ(-297px) translateX(-100%);
 		}
