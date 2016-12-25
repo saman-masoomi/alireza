@@ -13,26 +13,6 @@ if (function_exists('add_theme_support')) {
 add_theme_support( 'post-thumbnails' );
 }
 
-// custom post type function
-function create_posttype() {
-
-	register_post_type( 'index-setting',
-	// CPT Options
-		array(
-			'labels' => array(
-				'name' => __( 'صفحه اصلی' ),
-				'singular_name' => __( 'صفحه اصلی' )
-			),
-			'public' => true,
-			'has_archive' => true,
-			'rewrite' => array('slug' => 'index'),
-		)
-	);
-}
-// Hooking up our function to theme setup
-add_action( 'init', 'create_posttype' );
-
-
 // Theme Setting
 
 add_action('admin_menu', 'add_global_custom_options');
@@ -52,51 +32,58 @@ function global_custom_options()
            
             <?php wp_nonce_field('update-options') ?>
             
-            <p class="optionss"><strong>متن 1 صفحه اصلی :</strong>
+        <div class="theme-setting-group1">
+           <h2>صفحه اصلی :</h2>
+            <p><span>متن 1 صفحه اصلی :</span><br>
                 <input type="text" name="index-title-1" size="45" value="<?php echo get_option('index-title-1'); ?>" />
             </p> 
-		   <p><strong>متن 2 صفحه اصلی :</strong>
+		   <p><span>متن 2 صفحه اصلی :</span><br>
                 <input type="text" name="index-title-2" size="45" value="<?php echo get_option('index-title-2'); ?>" />
             </p>
-            <p><strong>لینک عکس اصلی :</strong>
+            <p><span>لینک عکس اصلی :</span><br>
                 <input type="text" name="index-image" size="45" value="<?php echo get_option('index-image'); ?>" />
             </p>
-            <p><strong>متن دکمه صفحه اصلی :</strong>
+            <p><span>متن دکمه صفحه اصلی :</span><br>
                 <input type="text" name="button-text" size="45" value="<?php echo get_option('button-text'); ?>" />
             </p>
-           <p><strong>متن دکمه تماس با من :</strong>
+           <p><span>متن دکمه تماس با من :</span><br>
                 <input type="text" name="contact-text" size="45" value="<?php echo get_option('contact-text'); ?>" />
             </p>
-            <p><strong>شماره تماس :</strong>
+        </div>
+        <div class="theme-setting-group1">
+           <h2>تماس با ما :</h2>
+            <p><span>شماره تماس :</span><br>
                 <input type="text" name="phone-number" size="45" value="<?php echo get_option('phone-number'); ?>" />
             </p>
-            <p><strong>شماره تماس بخش موبایل :</strong>
+            <p><span>شماره تماس بخش موبایل :</span><br>
                 <input type="text" name="phone-number1" size="45" value="<?php echo get_option('phone-number1'); ?>" />
             </p>
-            <p><strong>ایمیل :</strong>
+            <p><span>ایمیل :</span><br>
                 <input type="text" name="email" size="45" value="<?php echo get_option('email'); ?>" />
             </p>
-            <p><strong>تلگرام :</strong>
+            <p><span>تلگرام :</span><br>
                 <input type="text" name="social_telegram" size="45" value="<?php echo get_option('social_telegram'); ?>" />
             </p>
-            <p><strong>فیس بوک :</strong>
+            <p><span>فیس بوک :</span><br>
                 <input type="text" name="social_facebook" size="45" value="<?php echo get_option('social_facebook'); ?>" />
             </p>
-            <p><strong>لاین :</strong>
+            <p><span>لاین :</span><br>
                 <input type="text" name="social_line" size="45" value="<?php echo get_option('social_line'); ?>" />
             </p>
-            <p><strong>اینستاگرام :</strong>
+            <p><span>اینستاگرام :</span><br>
                 <input type="text" name="social_instagram" size="45" value="<?php echo get_option('social_instagram'); ?>" />
             </p>
-            <p><strong>لینک تصویر بارکد :</strong>
+            <p><span>لینک تصویر بارکد :</span><br>
                 <input type="text" name="barcode-pic" size="45" value="<?php echo get_option('barcode-pic'); ?>" />
             </p>
-            
-            <p><strong>متن کپی رایت :</strong>
+        </div>
+       <div class="theme-setting-group1">
+           <h2>فوتر :</h2>
+            <p><span>متن کپی رایت :</span><br>
                 <input type="text" name="twitterid" size="45" value="<?php echo get_option('twitterid'); ?>" />
-            </p>
-            
-		<p><input type="submit" name="Submit" value="Store Options" /></p>
+            </p><br>
+         </div>
+		<p><input type="submit" name="Submit" value="ذخیره تنظیمات" /></p>
 		
 		
 		<input type="hidden" name="action" value="update" />
