@@ -1,23 +1,41 @@
+	<?php /* Template Name: Category Page */ ?>
 <?php get_header();?> 
-			<div class="container">
-			<div class="row index">
-				<div class="index-image">
-					<img src="<?php echo get_option('index-image') ?>" class="tilt-effect visible-md visible-lg" alt="">
-					<img src="<?php echo get_option('index-image') ?>" class="visible-xs visible-sm" alt="">
-				</div>
-				<div class="index-content">
-					<div id="logo" class="play visible-xs visible-sm"></div>
-					<h1 class="animation"><?php echo get_option('index-title-1') ?></h1>
-					<audio src="http://www.soundjay.com/mechanical/camera-shutter-click-08.mp3"></audio>
-					<div id="shutter"></div>
+	<div class="container">
+		<div class="row index">
 
-					<h2><?php echo get_option('index-title-2') ?></h2>
-
-					<a href="http://localhost/category/" ?><button class="work-button"><span><?php echo get_option('button-text') ?></span></button></a>
-					<div id="logo" class="play hidden-sm hidden-xs"></div>
-				</div>
+			<div class="category-container">
+				<ul class="category">
+					<li class="category-item">
+						<div class="category-icon">
+							<img src="<?php bloginfo('template_url');?>/images/gallery-category-photography.png" alt=""  hover="samfade()">
+						</div>
+						<h1 class="category-title">PHOTOGRAPHY</h1>
+					</li>
+					<li class="category-item">
+						<div class="category-icon">
+							<img src="<?php bloginfo('template_url');?>/images/gallery-category-digital-design.png" class="shadow-radial" alt="">
+						</div>
+						<h1 class="category-title">Digital Design</h1>
+					</li>
+					<li class="category-item">
+						<div class="category-icon">
+							<img src="<?php bloginfo('template_url');?>/images/gallery-category-print-design.png" alt="">
+						</div>
+						<h1 class="category-title">Print design</h1>
+					</li>
+					<li class="category-item">
+						<div class="category-icon">
+							<img src="<?php bloginfo('template_url');?>/images/gallery-category-logo-design.png" alt="">
+						</div>
+						<h1 class="category-title">logo</h1>
+					</li>
+				</ul>
 				
-				<div class="contact-button" id="contact-button" onclick="samfade()">
+				
+			</div>
+
+
+<div class="contact-button" id="contact-button" onclick="samfade()">
 					<img src="<?php bloginfo('template_url');?>/images/contact-me.png" alt="Contact Button">
 					<p><?php echo get_option('contact-text') ?></p>
 				</div>
@@ -56,7 +74,8 @@
 					
 					<img src="<?php bloginfo('template_url');?>/images/Close-contact.png" alt="Close Contact" onclick="contactclose()" class="close-contact-xs rubberBand visible-xs visible-sm">
 				</div>
-			</div>
 		</div>
 		
+	</div>
+
  <?php get_footer();?> 

@@ -21,8 +21,15 @@
 			$('.contact').addClass('animated fadeOutDown');
 			$('.contact-button').addClass('animated manydown');
 			$('.contact-button').removeClass('hideanimate');
-		}
+		}	
 			
+		$('button').click(function() {
+		  $('#shutter').addClass('on');
+		  $('audio')[0].play();
+		  setTimeout(function() {
+			$('#shutter').removeClass('on');
+		  }, 35*2+45);/* Shutter speed (double & add 45) */
+		});
 		</script>
 		
 	 <?php wp_footer();?> 
