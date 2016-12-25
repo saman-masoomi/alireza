@@ -10,6 +10,7 @@ if (function_exists('add_theme_support')) {
 add_theme_support( 'post-thumbnails' );
 }
 
+<<<<<<< HEAD
 // add menu
 function register_my_menu() {
   register_nav_menu('header-menu',__( 'Header Menu' ));
@@ -25,6 +26,8 @@ array(
 }
 add_action( 'init', 'register_my_menus' );
 
+=======
+>>>>>>> origin/Alireza-WP-Theme
 // Theme Setting
 add_action('admin_menu', 'add_global_custom_options');
 function add_global_custom_options()
